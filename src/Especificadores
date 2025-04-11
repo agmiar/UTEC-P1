@@ -1,0 +1,15 @@
+package modulo.uno.teoria;
+
+public class Especificadores{
+    public static void main(String[] args){
+        public class Interacciones{
+	    public static String nombre;
+	    public static void saludar(String nombre){
+		    System.out.println("Hola!, " + nombre);
+	    }
+    }
+
+        Interacciones.nombre = "Amalia";
+        Interacciones.saludar(nombre);
+    }
+}
