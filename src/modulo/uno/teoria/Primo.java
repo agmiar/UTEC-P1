@@ -1,4 +1,4 @@
-﻿package modulo.uno.teoria;
+package modulo.uno.teoria;
 
 public class Primo {
     public static void main(String[] args) {
