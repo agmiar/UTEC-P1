@@ -1,6 +1,6 @@
 package modulo.dos.teoria;
 
-public class MainMethod {
+public class Main {
     public static void main(String[] args) {
         if (args[0].equals("1"))
                 System.out.println("El primer argumento es: 1");

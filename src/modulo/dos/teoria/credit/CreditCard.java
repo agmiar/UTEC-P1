@@ -44,4 +44,12 @@ public class CreditCard {
         System.out.println("Disponible de la tarjeta = " + tarjeta.getDisponibleTarjeta()); // casting implícito
         System.out.println("Limite = " + tarjeta.getLimit()); // casting implícito
     }
+
+    public void imprimirTarjeta(){
+        System.out.println("Número = " + this.getNumber());
+        System.out.println("Nombre = " + this.getName());
+        System.out.println("Banco = " + this.getBank());
+        System.out.println("Disponible de la tarjeta = " + this.getDisponibleTarjeta()); // casting implícito
+        System.out.println("Limite = " + this.getLimit()); // casting implícito
+    }
 }

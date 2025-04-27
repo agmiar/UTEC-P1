@@ -3,7 +3,7 @@ package modulo.dos.teoria.credit;
 public class Test {
     public static void main(String[] args) {
         // Crear un array de tarjetas de crédito
-        CreditCard billetera[] = new CreditCard[10];
+        CreditCard billetera[] = new CreditCard[3];
         billetera[0] = new CreditCard("5391 0375 9387 5309", "John Bowman",
                 "California Savings", 0.0, 2500);
         billetera[1] = new CreditCard("3485 0399 3395 1954", "John Bowman",
@@ -26,6 +26,10 @@ public class Test {
                 System.out.println("Nuevo saldo = " + billetera[i].getDisponibleTarjeta());
             }
             System.out.println();
+        }
+
+        for (CreditCard tarjeta : billetera){
+            tarjeta.imprimirTarjeta();
         }
     }
 }
