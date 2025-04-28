@@ -1,6 +1,19 @@
-package modulo.tres.algoritmos;
+package modulo.tres.sortandsearch;
 
 public class Sort {
+    public static void bubbleSort(int[] arr){
+        for (int i = 0; i < arr.length - 1; i++) {           // Pasadas
+            for (int j = 0; j < arr.length - 1 - i; j++) {   // Comparaciones
+                if (arr[j] > arr[j + 1]) {
+                    // Intercambiar (Swap)
+                    int aux = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = aux;
+                }
+            }
+        }
+    }
+
     public static void insertionSort(int[] a){
         for (int i = 0; i < a.length - 1; i++){
             for (int j = 0; j < (a.length - 1 - i); j++){

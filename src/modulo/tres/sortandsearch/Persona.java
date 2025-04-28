@@ -1,4 +1,4 @@
-package modulo.tres.algoritmos;
+package modulo.tres.sortandsearch;
 
 public class Persona {
     private String nombre;

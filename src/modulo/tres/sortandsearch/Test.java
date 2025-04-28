@@ -1,17 +1,24 @@
-package modulo.tres.algoritmos;
+package modulo.tres.sortandsearch;
 
 import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-        // Tipo de dato primitivo
-        int[] arr = {10,9,8,7,6,5,4,3,2,1};
-        System.out.println(Arrays.toString(arr));
-        Sort.insertionSort(arr);
-        System.out.println(Arrays.toString(arr));
-        System.out.println("");
+        // Bubble sort con tipo de dato primitivo
+        int[] arr1 = {40,50,90,5,-10,3,4,15};
+        System.out.println(Arrays.toString(arr1));
+        Sort.insertionSort(arr1);
+        System.out.println(Arrays.toString(arr1));
+        System.out.println();
 
-        // Tipo de dato complejo
+        // Insertion sort con tipo de dato primitivo
+        int[] arr2 = {10,9,8,7,6,5,4,3,2,1};
+        System.out.println(Arrays.toString(arr2));
+        Sort.insertionSort(arr2);
+        System.out.println(Arrays.toString(arr2));
+        System.out.println();
+
+        // Insertion sort con tipo de dato complejo
         Persona[] personas = new Persona[3];
         personas[0] = new Persona("Patricio", 22);
         personas[1] = new Persona("Rosita", 15);
@@ -19,18 +26,18 @@ public class Test {
         System.out.println(Arrays.deepToString(personas));
         Sort.insertionSort(personas);
         System.out.println(Arrays.deepToString(personas));
-        System.out.println("");
+        System.out.println();
 
         // Búsqueda binaria de tipo de dato primitivo
         int valorBuscado, posicionValorBuscado;
 
         for (int i = 1; i < 4; i++){
             valorBuscado = (int)(Math.round(Math.random() * 10));
-            posicionValorBuscado = Search.binarySearch(arr, valorBuscado);
+            posicionValorBuscado = Search.binarySearch(arr2, valorBuscado);
             System.out.printf("El valor %d se encuentra en la posición %d del arreglo\n"
                     , valorBuscado, posicionValorBuscado);
         }
-        System.out.println("");
+        System.out.println();
 
         // Búsqueda binaria de tipo de dato complejo
         int[] edades = new int[3];
