@@ -10,9 +10,8 @@ public class ReadWithScannerDemo {
 
         ArrayList<Persona> personas = new ArrayList<>();
 
-        try {
-            Scanner myScanner = new Scanner(archivo);
-
+        // TRY-WITH-RESOURCES
+        try (Scanner myScanner = new Scanner(archivo)){
             while (myScanner.hasNext()){
 
                 // Leer la línea completa
@@ -31,7 +30,9 @@ public class ReadWithScannerDemo {
                 personas.add(persona);
             }
 
-            myScanner.close();
+            // no es necesario cerrar el scanner manualmente,
+            // ya que el try-with-resources se encarga por mí
+            // myScanner.close();
         }
         catch (Exception ex) {
             System.out.println(ex.getMessage());
